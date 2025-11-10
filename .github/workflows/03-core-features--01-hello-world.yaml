@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: First message
-        run: echo ""Hello from an inline bash script in a GitHub Action Workflow!""
+        run: echo "Hello from an inline bash script in a GitHub Action Workflow!"
   say-hello-inline-bash1:
     runs-on: ubuntu-24.04
     steps:
