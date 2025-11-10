@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       selections:
-        description: LIst of selections(a1,b2,c3)
-        required: true
-        default: c3
+        description: List of selections(a1,b2,c3)
+        # required: true
+        # default: c3
 
 jobs:
   say-hello-inline-bash:
