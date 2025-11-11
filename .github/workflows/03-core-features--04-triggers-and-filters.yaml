@@ -32,6 +32,7 @@ jobs:
   echo-event:
     runs-on: ubuntu-24.04
     steps:
+      - uses: actions/checkout@v3
       - name: Dump full event JSON
         run: |
           echo "=== $GITHUB_EVENT_NAME payload ==="
