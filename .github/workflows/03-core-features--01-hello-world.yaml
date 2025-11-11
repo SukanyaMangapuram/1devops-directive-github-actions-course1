@@ -2,7 +2,20 @@ name: Hello World
 
 on:
   workflow_dispatch:
-
+    inputs:
+      cluster: 
+        description: 'Select clusterto build'
+        default: cl48
+        required: true
+        type: choice
+        options: [cl46, cl48, cl51, c155]
+      brand:
+        description: 'Select brand'
+        default: 'audi'
+        required: true
+        type: choice
+        options: [audi, bently, porsche]
+        
 jobs:
   say-hello-inline-bash:
     runs-on: ubuntu-24.04
